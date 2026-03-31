@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle";
-import Container from "./Container";
+import { ThemeToggle } from "./HeaderThemeToggle";
+import Container from "../../Container";
 
 export default function Header() {
     return (
