@@ -2,6 +2,11 @@ import { ContentContainer } from "../../ContentContainer";
 import Image from "next/image";
 import { CzechFlag } from "../../icons/CzechFlag";
 import { cn } from "../../../lib/utils";
+import { Button } from "@/components/ui/button";
+import { RiGithubLine } from "react-icons/ri";
+import { HiOutlineMailOpen } from "react-icons/hi";
+
+
 
 
 export default function Hero() {
@@ -31,6 +36,21 @@ export default function Hero() {
                 <p className="font-mono">
                     Passionate about creating intuitive and efficient software solutions.
                 </p>
+                <div className="flex pt-5 gap-4">
+                    <Button className="font-mono" asChild>
+                        <a href="https://github.com/michaelptacek05" target="_blank" rel="noopener noreferrer">
+                            <RiGithubLine />
+                            Show projects
+                        </a>
+                    </Button>
+                    <Button className="font-mono" variant="secondary" asChild>
+                        <a href="mailto:mptacek005@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <HiOutlineMailOpen />
+                            Contact me
+                        </a>    
+                    </Button>
+                </div>
+                
             </ContentContainer>
         </div>
     );
