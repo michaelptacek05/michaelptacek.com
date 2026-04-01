@@ -3,7 +3,7 @@ import Image from "next/image";
 import { CzechFlag } from "../../icons/CzechFlag";
 import { cn } from "../../../lib/utils";
 import { Button } from "@/components/ui/button";
-import { RiGithubLine } from "react-icons/ri";
+import { IoDocumentTextOutline } from "react-icons/io5";
 import { HiOutlineMailOpen } from "react-icons/hi";
 
 
@@ -11,7 +11,7 @@ import { HiOutlineMailOpen } from "react-icons/hi";
 
 export default function Hero() {
     return (
-        <div>
+        <section>
             <ContentContainer> 
                 <Image
                     className="mb-5 size-16 rounded-full mask-auto  "
@@ -39,19 +39,19 @@ export default function Hero() {
                 <div className="flex pt-5 gap-4">
                     <Button className="font-mono" asChild>
                         <a href="https://github.com/michaelptacek05" target="_blank" rel="noopener noreferrer">
-                            <RiGithubLine />
-                            Show projects
+                            <HiOutlineMailOpen />
+                            Contact me
                         </a>
                     </Button>
                     <Button className="font-mono" variant="secondary" asChild>
                         <a href="mailto:mptacek005@gmail.com" target="_blank" rel="noopener noreferrer">
-                            <HiOutlineMailOpen />
-                            Contact me
+                            <IoDocumentTextOutline />
+                            Show CV
                         </a>    
                     </Button>
                 </div>
                 
             </ContentContainer>
-        </div>
+        </section>
     );
 }
