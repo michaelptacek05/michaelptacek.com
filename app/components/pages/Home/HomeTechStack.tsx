@@ -2,6 +2,7 @@ import { ContentContainer } from "../../ContentContainer";
 import { Badge } from "@/components/ui/badge";
 import { SiAstro, SiDocker, SiFigma, SiNextdotjs, SiNodedotjs, SiPostgresql, SiReact, SiSass, SiShadcnui, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { LiaAdobe } from "react-icons/lia";
+import { SectionHeader } from "../../SectionHeader";
 
 const techStack = [
     {
@@ -58,7 +59,7 @@ export default function HomeTechStack() {
     return (
         <section>
             <ContentContainer>
-                <h2 className="font-sans font-medium text-xs text-faded tracking-[0.02em] uppercase">Tech Stack</h2>
+                <SectionHeader heading="Tech Stack" />
                 <div className="flex flex-wrap pt-5 gap-2"> 
                     {techStack.map((tech, index) => (
                         <Badge variant="outline" className="font-mono text-sm" key={index}>

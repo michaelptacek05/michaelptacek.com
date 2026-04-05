@@ -34,7 +34,7 @@ export function ThemeToggle() {
     return (
         <div className="relative group flex justify-center">
             <button
-                className="p-2.5 rounded-xl hover:bg-gray-500/30 text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100 transition-all focus:outline-none"
+                className="p-2.5 rounded-xl hover:bg-gray-500/30 text-gray-600 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-100 transition-all focus:outline-none cursor-pointer"
                 onClick={() =>
                     setTheme(resolvedTheme === "dark" ? "light" : "dark")
                 }
