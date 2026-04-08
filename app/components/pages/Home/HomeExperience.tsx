@@ -1,47 +1,45 @@
+import { Badge } from "@/components/ui/badge";
 import { ContentContainer } from "../../ContentContainer";
 import { SectionHeader } from "../../SectionHeader";
 
 const EXPERIENCES = [
     {
-        company: "NordSecurity",
-        role: "Senior Frontend Developer",
-        period: "Jan 2024 - Present",
-        description:
-            "NordPass is a secure password manager that auto-fills logins and forms and lets you access it all from anywhere.",
+        company: "MagicWare",
+        role: "Frontend Developer & UX/UI Designer",
+        period: "Feb 2024 - Present",
         points: [
-            "Building and maintaining NordPass",
-            "Identifying key product expansion opportunities and building PoCs",
-            "Collaborating with cross-functional teams",
-            "Conducting technical interviews",
+            "Developed custom websites, including integrated reservation systems for travel agencies.",
+            "Designed user experiences (UX) and user interfaces (UI) including wireframing for various systems and mobile applications.",
+            "Executed graphic design tasks and prepared materials for print.",
+            "Managed helpdesk inquiries and provided technical support.",
         ],
         stack: [
             "React",
-            "TypeScript",
-            "Electron",
-            "Redux",
-            "Tailwind",
-            "Storybook",
+            "JavaScript",
+            "Rest API",
+            "Tailwind/SCSS",
+            "Figma",
+            "Adobe Suite",
         ],
     },
     {
-        company: "t",
-        role: "Senior Frontend Developer",
-        period: "Jan 2024 - Present",
-        description:
-            "NordPass is a secure password manager that auto-fills logins and forms and lets you access it all from anywhere.",
+        company: "Freelance Development",
+        role: "Freelance Development",
+        period: "April 2024 - Present",
         points: [
-            "Building and maintaining NordPass",
-            "Identifying key product expansion opportunities and building PoCs",
-            "Collaborating with cross-functional teams",
-            "Conducting technical interviews",
+            "Created custom websites for small businesses including CMS and e-commerce solutions.",
+            "Graphic design and branding for clients, including logo creation and marketing materials.",
+            "Provided technical support and maintenance for client websites.",
+            "Collaborated with clients to understand their needs and deliver tailored solutions.",
         ],
         stack: [
-            "React",
-            "TypeScript",
-            "Electron",
-            "Redux",
+            "Next.js",
+            "Astro.js",
+            "Node.js",
+            "PostgreSQL",
+            "Docker",
             "Tailwind",
-            "Storybook",
+            "Figma",
         ],
     },
 ];
@@ -84,6 +82,14 @@ export default function HomeExperience() {
                                     <li key={i}>{point}</li>
                                 ))}
                             </ul>
+
+                            <div className="flex flex-wrap pt-5 gap-2">
+                                {exp.stack.map((tech, i) => (
+                                    <Badge variant="outline" className="font-mono text-sm" key={i}>
+                                        {tech}
+                                    </Badge>
+                                ))}
+                            </div>
                         </div>
                     ))}
                 </div>

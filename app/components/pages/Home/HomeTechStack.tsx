@@ -59,7 +59,7 @@ export default function HomeTechStack() {
     return (
         <section>
             <ContentContainer>
-                <SectionHeader heading="Tech Stack" />
+                <SectionHeader heading="Tech Stack" text="Technologies and tools I work with:" />
                 <div className="flex flex-wrap pt-5 gap-2"> 
                     {techStack.map((tech, index) => (
                         <Badge variant="outline" className="font-mono text-sm" key={index}>
