@@ -7,7 +7,7 @@ export function SectionHeader({
 }) {
     return (
         <div className={text ? "mb-6" : "mb-2"}> 
-            <h2 className="font-sans font-medium text-xs text-faded uppercase">
+            <h2 className="font-sans font-medium text-xs text-muted-foreground uppercase">
                 {heading}
             </h2>
             {text && (
