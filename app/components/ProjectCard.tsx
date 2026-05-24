@@ -15,7 +15,7 @@ interface ProjectCardProps {
 export function ProjectCard({ name, description, href }: ProjectCardProps) {
     return (
         <Link href={href} className="block no-underline group">
-            <Card className="transition-all duration-300 hover:border-primary/50 hover:bg-accent/50 cursor-pointer h-full border-foreground/10 bg-card text-card-foreground">
+            <Card className="transition-all duration-300 hover:bg-primary/5 cursor-pointer h-full border border-primary/30 shadow-none">
                 <CardHeader>
                     <CardTitle className="group-hover:text-primary transition-colors">
                         {name}
