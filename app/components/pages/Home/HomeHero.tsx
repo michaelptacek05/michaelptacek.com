@@ -4,7 +4,7 @@ import { CzechFlag } from "../../icons/CzechFlag";
 import { cn } from "../../../lib/utils";
 import { Button } from "@/components/ui/button";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import { HiOutlineMailOpen } from "react-icons/hi";
+import { CopyEmailButton } from "../../CopyEmailButton";
 
 
 
@@ -16,7 +16,7 @@ export default function Hero() {
                 <Image
                     className="mb-5 size-16 rounded-full mask-auto  "
                     src="/avatar.jpeg"
-                    alt="Andrei Hudovich"
+                    alt="Michael Ptáček"
                     width={64}
                     height={64}
                     loading="eager"
@@ -27,27 +27,22 @@ export default function Hero() {
                         A software engineer based in Prague, Czechia
                         <CzechFlag
                             className={cn(
-                            'ml-2 inline-block h-2.25 w-3 shrink-0 ě-translate-y-0.5 rounded-xs',
+                            'ml-2 inline-block h-2.25 w-3 shrink-0 -translate-y-0.5 rounded-xs',
                             'drop-shadow-[0_0_1px_rgba(0,0,0,0.1)]'
                             )}
                         />
                     </p>
                 </div>
                 <p className="font-mono">
-                    Passionate about creating intuitive and efficient software solutions.
+                    I build fast, accessible web products — from UI design in Figma to deployment on my own VPS.
                 </p>
                 <div className="flex pt-5 gap-4">
-                    <Button className="font-mono" asChild>
-                        <a href="https://github.com/michaelptacek05" target="_blank" rel="noopener noreferrer">
-                            <HiOutlineMailOpen />
-                            Contact me
-                        </a>
-                    </Button>
+                    <CopyEmailButton />
                     <Button className="font-mono" variant="secondary" asChild>
-                        <a href="mailto:mptacek005@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <a href="/api/cv" target="_blank" rel="noopener noreferrer">
                             <IoDocumentTextOutline />
                             Show CV
-                        </a>    
+                        </a>
                     </Button>
                 </div>
                 

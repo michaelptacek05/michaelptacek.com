@@ -7,9 +7,11 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "docker:build": "docker build -t ghcr.io/michaelptacek05/michaelptacek.com:latest --platform linux/amd64 ."
+    "docker:build": "docker build -t ghcr.io/michaelptacek05/michaelptacek.com:latest --platform linux/amd64 .",
+    "docker:push": "docker push ghcr.io/michaelptacek05/michaelptacek.com:latest"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.5.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.7.0",

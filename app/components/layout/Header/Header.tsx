@@ -8,9 +8,9 @@ export default function Header() {
             <Container className="flex h-16 items-center justify-between">
                 <Link
                     href="/"
-                    className="text-xl font-bold text-slate-900 dark:text-white"
+                    className="text-xl font-thin tracking-widest text-slate-900 dark:text-white"
                 >
-                    Portfolio
+                    MP
                 </Link>
                 <div className="flex items-center gap-6">
                     <ThemeToggle />
