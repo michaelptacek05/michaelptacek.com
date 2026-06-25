@@ -6,7 +6,7 @@ import Container from "../../Container";
 export default function Footer() {
     return (
         <footer className="border-t border-border mt-auto">
-            <Container className="flex h-16 items-center justify-between">
+            <Container className="flex flex-col items-center gap-3 py-5 text-center lg:h-16 lg:flex-row lg:justify-between lg:gap-2 lg:py-0 lg:text-left">
                 <span className="flex items-center gap-1.5 font-mono text-xs text-muted-foreground">
                     © {new Date().getFullYear()} Built with{" "}
                     <IoHeart className="text-red-500 shrink-0" size={11} />

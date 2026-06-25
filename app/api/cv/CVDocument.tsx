@@ -251,11 +251,8 @@ export function CVDocument({ avatarSrc }: Props) {
                             <Text style={s.expPeriod}>Jan 2024 – Present</Text>
                         </View>
                         <Text style={s.expMeta}>Prague · On-site · promoted from internship (UI Designer)</Text>
-                        <Text style={s.expIntro}>
-                            Developing new features and pages in React for a large-scale reservation system for travel
-                            agencies, integrating the frontend with APIs in a .NET CMS environment.
-                        </Text>
                         {[
+                            "Developing new features and pages in React for a large-scale reservation system for travel agencies, integrating the frontend with APIs in a .NET CMS environment.",
                             "Modernizing legacy web platforms — fixing bugs and optimizing code (HTML, SCSS, jQuery) and managing CMS objects.",
                             "Designing wireframes and interactive prototypes in Figma and Adobe XD; conducting usability testing and analysis of existing systems.",
                             "Creating graphic designs for applications and print materials (logos, brochures, mockups) in Adobe Creative Suite.",

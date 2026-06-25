@@ -4,15 +4,16 @@ import { ProjectCard } from "../../ProjectCard";
 
 const PROJECTS = [
     {
-        name: "Poradci Choceň",
+        name: "Message Board",
         description:
-            "Website build for financial advisors using Astro.js and hosted on my VPS using containerization.",
-        href: "https://poradci-chocen.cz/",
+            "Live messaging board with an iPhone-style chat interface and real-time updates, built with Next.js, Socket.io, and Prisma/PostgreSQL, containerized with Docker.",
+        href: "https://messages.michaelptacek.com",
     },
     {
-        name: "Barbershop U Lazebníka",
-        description: "Local barbershop website with a modern design.",
-        href: "https://barbershopulazebnika.cz/",
+        name: "REST API Store System",
+        description:
+            "Frontend application for managing products of a store system, communicating with a REST API running via Docker. Built with Next.js, React, TypeScript, and Tailwind CSS.",
+        href: "https://github.com/michaelptacek05/obchod",
     },
 ];
 

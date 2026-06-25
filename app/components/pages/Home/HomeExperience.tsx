@@ -130,7 +130,7 @@ export default function HomeExperience() {
                                         </span>
                                     </div>
 
-                                    <div className="flex items-center gap-2 mb-4">
+                                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1 mb-4">
                                         <p className="font-mono text-sm text-primary">
                                             {exp.role}
                                         </p>
