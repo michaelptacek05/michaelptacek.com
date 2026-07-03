@@ -34,7 +34,7 @@ export default function Hero() {
                     </p>
                 </div>
                 <p className="font-mono">
-                    I build fast, accessible web products — from UI design in Figma to deployment on my own VPS.
+                    I build fast, accessible web products — from development to deployment on my own solutions.
                 </p>
                 <div className="flex pt-5 gap-4">
                     <CopyEmailButton />
