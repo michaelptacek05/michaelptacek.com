@@ -13,6 +13,12 @@ export default function Header() {
                     MP
                 </Link>
                 <div className="flex items-center gap-6">
+                    <Link
+                        href="/clients"
+                        className="font-sans text-xs font-medium uppercase tracking-wider text-muted-foreground transition-colors hover:text-primary"
+                    >
+                        Clients
+                    </Link>
                     <ThemeToggle />
                 </div>
             </Container>

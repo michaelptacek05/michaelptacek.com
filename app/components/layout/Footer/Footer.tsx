@@ -19,6 +19,9 @@ export default function Footer() {
                 >
                     mptacek005@gmail.com
                 </a>
+                <p className="font-mono text-xs text-muted-foreground">
+                    ičo: 21460256
+                </p>
 
                 <Link
                     href="https://github.com/michaelptacek05/michaelptacek.com"
