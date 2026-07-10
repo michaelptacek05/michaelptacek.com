@@ -177,7 +177,7 @@ const SKILLS = [
     },
     {
         category: "Backend",
-        items: ["Node.js", "SQL", "REST API"],
+        items: ["Node.js", "Express.js", "PHP", "Symphony", "SQL", "REST API"],
     },
     {
         category: "Design & UX",
