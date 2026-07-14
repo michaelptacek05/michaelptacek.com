@@ -9,7 +9,7 @@ export function PageClients() {
             <ContentContainer>
                 <SectionHeader
                     heading="Clients"
-                    text="Businesses I've worked with — what we built together and where to find it:"
+                    text="Businesses I've worked with, what we built together and where to find it:"
                 />
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {CLIENTS.map((client) => (

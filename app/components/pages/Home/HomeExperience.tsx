@@ -22,7 +22,7 @@ const EXPERIENCES: Experience[] = [
         company: "MagicWare",
         role: "UI/UX Designer / Frontend Developer",
         type: "Freelance",
-        period: "Jan 2024 – Present",
+        period: "Jan 2024 - Present",
         location: "Prague, Czechia · Hybrid",
         groups: [
             {
@@ -61,7 +61,7 @@ const EXPERIENCES: Experience[] = [
         company: "Freelance",
         role: "Freelance Web Developer",
         type: "Freelance",
-        period: "Apr 2024 – Present",
+        period: "Apr 2024 - Present",
         groups: [
             {
                 title: "Full-Stack Web Development",

@@ -203,7 +203,7 @@ interface Props { avatarSrc: string }
 
 export function CVDocument({ avatarSrc }: Props) {
     return (
-        <Document title="Michael Ptacek — CV" author="Michael Ptacek">
+        <Document title="Michael Ptacek - CV" author="Michael Ptacek">
             <Page size="A4" style={s.page}>
 
                 {/* ── Header ── */}
@@ -230,7 +230,7 @@ export function CVDocument({ avatarSrc }: Props) {
                 <View style={s.section}>
                     <Text style={s.sectionHeading}>Profile</Text>
                     <Text style={s.bodyText}>
-                        Over 2 years building websites and applications in React, Next.js, and Astro — from initial
+                        Over 2 years building websites and applications in React, Next.js, and Astro, from initial
                         wireframes in Figma to deployment on a self-managed VPS. Focused on performance
                         (Core Web Vitals), technical SEO, and accessibility.
                     </Text>
@@ -245,15 +245,15 @@ export function CVDocument({ avatarSrc }: Props) {
                     <View style={s.expBlock}>
                         <View style={s.expHeader}>
                             <Text style={s.expTitle}>
-                                Frontend Developer & UI/UX Designer —{" "}
+                                Frontend Developer & UI/UX Designer -{" "}
                                 <Text style={s.expCompany}>MagicWare s.r.o.</Text>
                             </Text>
-                            <Text style={s.expPeriod}>Jan 2024 – Present</Text>
+                            <Text style={s.expPeriod}>Jan 2024 - Present</Text>
                         </View>
                         <Text style={s.expMeta}>Prague · On-site · promoted from internship (UI Designer)</Text>
                         {[
                             "Developing new features and pages in React for a large-scale reservation system for travel agencies, integrating the frontend with APIs in a .NET CMS environment.",
-                            "Modernizing legacy web platforms — fixing bugs and optimizing code (HTML, SCSS, jQuery) and managing CMS objects.",
+                            "Modernizing legacy web platforms by fixing bugs and optimizing code (HTML, SCSS, jQuery) and managing CMS objects.",
                             "Designing wireframes and interactive prototypes in Figma and Adobe XD; conducting usability testing and analysis of existing systems.",
                             "Creating graphic designs for applications and print materials (logos, brochures, mockups) in Adobe Creative Suite.",
                         ].map((pt, i) => (
@@ -267,16 +267,16 @@ export function CVDocument({ avatarSrc }: Props) {
                     <View style={s.expBlock}>
                         <View style={s.expHeader}>
                             <Text style={s.expTitle}>
-                                Freelance Web Developer —{" "}
+                                Freelance Web Developer -{" "}
                                 <Text style={s.expCompany}>Self-employed</Text>
                             </Text>
-                            <Text style={s.expPeriod}>Apr 2024 – Present</Text>
+                            <Text style={s.expPeriod}>Apr 2024 - Present</Text>
                         </View>
                         <Text style={s.expMeta}>Prague · end-to-end custom projects from concept to launch</Text>
                         {[
-                            "Building modern web applications and fast websites from scratch in Next.js and Astro — from design through frontend and backend integrations to deployment.",
+                            "Building modern web applications and fast websites from scratch in Next.js and Astro, from design through frontend and backend integrations to deployment.",
                             "Optimizing technical SEO and Core Web Vitals (semantic HTML, accessibility, loading speed).",
-                            "Operating and maintaining a self-managed VPS — server configuration, domain management, and application deployments for clients.",
+                            "Operating and maintaining a self-managed VPS, handling server configuration, domain management, and application deployments for clients.",
                             "Independently managing the full project lifecycle from first contact to handover and ongoing support.",
                         ].map((pt, i) => (
                             <View key={i} style={s.bullet}>
@@ -312,17 +312,17 @@ export function CVDocument({ avatarSrc }: Props) {
                     <View style={s.expBlock}>
                         <View style={s.expHeader}>
                             <Text style={s.expTitle}>
-                                Information Technology —{" "}
+                                Information Technology -{" "}
                                 <Text style={s.expCompany}>Secondary School of Electrical Engineering, Multimedia & IT</Text>
                             </Text>
-                            <Text style={s.expPeriod}>2021 – 2025</Text>
+                            <Text style={s.expPeriod}>2021 - 2025</Text>
                         </View>
                         <Text style={s.expMeta}>Database development (SQL, PHP), hardware and software administration</Text>
                     </View>
                     <View>
                         <View style={s.expHeader}>
                             <Text style={s.expTitle}>
-                                Information Technology (PEF) —{" "}
+                                Information Technology (PEF) -{" "}
                                 <Text style={s.expCompany}>CZU Prague</Text>
                             </Text>
                             <View style={{ flexDirection: "row", alignItems: "center" }}>

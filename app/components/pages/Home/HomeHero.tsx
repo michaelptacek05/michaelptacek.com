@@ -34,7 +34,7 @@ export default function Hero() {
                     </p>
                 </div>
                 <p className="font-mono">
-                    I build fast, accessible web products — from development to deployment on my own solutions.
+                    I build fast, accessible websites and web apps, deploy and run them myself, from the first line of code to the live server.
                 </p>
                 <div className="flex pt-5 gap-4">
                     <CopyEmailButton />

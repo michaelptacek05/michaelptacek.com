@@ -7,7 +7,7 @@ const SERVICES = [
         number: "01",
         title: "I run what I build",
         description:
-            "I don't hand over a zip file and disappear. I launch your site, monitor it, watch the error logs, ship fixes, and keep everything updated — handled daily, not once a quarter.",
+            "I don't hand over a zip file and disappear. I launch your site, monitor it, watch the error logs, ship fixes, and keep everything updated. Handled daily, not once a quarter.",
     },
     {
         number: "02",
@@ -19,7 +19,7 @@ const SERVICES = [
         number: "03",
         title: "Unified administration",
         description:
-            "I build custom sitebuilders so you can manage multiple websites from one place — one login, one dashboard, consistent content everywhere.",
+            "I build custom sitebuilders so you can manage multiple websites from one place. One login, one dashboard, consistent content everywhere.",
     },
 ];
 
@@ -28,7 +28,7 @@ const PROCESS = [
         step: "1",
         title: "Intro call",
         description:
-            "We talk about your goals, scope, and budget — no commitment.",
+            "We talk about your goals, scope, and budget. No commitment.",
     },
     {
         step: "2",
