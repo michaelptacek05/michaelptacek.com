@@ -16,7 +16,7 @@ const TEXT   = "#111827";
 const s = StyleSheet.create({
     page: {
         fontFamily: "Helvetica",
-        fontSize: 9,
+        fontSize: 9.5,
         color: TEXT,
         backgroundColor: "#ffffff",
         paddingTop: 36,
@@ -29,24 +29,24 @@ const s = StyleSheet.create({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "flex-start",
-        marginBottom: 10,
+        marginBottom: 12,
     },
     headerLeft: { flex: 1, marginRight: 16 },
     photo: {
-        width: 68,
-        height: 68,
-        borderRadius: 34,
+        width: 74,
+        height: 74,
+        borderRadius: 37,
     },
     name: {
         fontFamily: "Helvetica-Bold",
-        fontSize: 20,
+        fontSize: 22,
         letterSpacing: 0.5,
         marginBottom: 2,
     },
     role: {
-        fontSize: 10,
+        fontSize: 11,
         color: GREEN,
-        marginBottom: 8,
+        marginBottom: 9,
     },
     contactRow: {
         flexDirection: "row",
@@ -64,25 +64,25 @@ const s = StyleSheet.create({
     divider: {
         borderBottomWidth: 1,
         borderBottomColor: BORDER,
-        marginBottom: 8,
+        marginBottom: 10,
     },
 
     /* ── Section ── */
-    section: { marginBottom: 8 },
+    section: { marginBottom: 10 },
     sectionHeading: {
         fontFamily: "Helvetica-Bold",
-        fontSize: 6.5,
+        fontSize: 7.5,
         textTransform: "uppercase",
         letterSpacing: 1,
         color: MUTED,
-        marginBottom: 5,
+        marginBottom: 6,
     },
     bodyText: {
         color: MUTED,
     },
 
     /* ── Experience ── */
-    expBlock: { marginBottom: 7 },
+    expBlock: { marginBottom: 8 },
     expHeader: {
         flexDirection: "row",
         justifyContent: "space-between",
@@ -160,6 +160,28 @@ const s = StyleSheet.create({
         marginBottom: 3,
     },
 
+    /* ── Projects ── */
+    projBlock: { marginBottom: 6 },
+    projHeader: {
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "flex-start",
+        marginBottom: 1,
+    },
+    projName: {
+        fontFamily: "Helvetica-Bold",
+        fontSize: 9.5,
+        flex: 1,
+    },
+    projLink: {
+        color: GREEN,
+        fontSize: 7.5,
+        marginLeft: 8,
+        flexShrink: 0,
+        textDecoration: "none",
+    },
+    projDesc: { color: MUTED },
+
     /* ── Languages ── */
     langRow: { flexDirection: "row" },
     langItem: {
@@ -177,7 +199,7 @@ const SKILLS = [
     },
     {
         category: "Backend",
-        items: ["Node.js", "Express.js", "PHP", "Symphony", "SQL", "REST API"],
+        items: ["Node.js", "Express.js", "PHP", "Symfony", "SQL", "REST API"],
     },
     {
         category: "Design & UX",
@@ -185,7 +207,22 @@ const SKILLS = [
     },
     {
         category: "DevOps",
-        items: ["Docker", "Linux", "VPS Management", "Technical SEO", "Core Web Vitals"],
+        items: ["Git", "Docker", "Linux", "VPS Management", "Technical SEO", "Core Web Vitals"],
+    },
+];
+
+const PROJECTS = [
+    {
+        name: "Message Board",
+        description:
+            "Live messaging board with an iPhone-style chat interface and real-time updates, built with Next.js, Socket.io, and Prisma/PostgreSQL, containerized with Docker.",
+        href: "https://messages.michaelptacek.com",
+    },
+    {
+        name: "REST API Store System",
+        description:
+            "Frontend application for managing products of a store system, communicating with a REST API running via Docker. Built with Next.js, React, TypeScript, and Tailwind CSS.",
+        href: "https://github.com/michaelptacek05/obchod",
     },
 ];
 
@@ -210,7 +247,7 @@ export function CVDocument({ avatarSrc }: Props) {
                 <View style={s.header}>
                     <View style={s.headerLeft}>
                         <Text style={s.name}>Michael Ptacek</Text>
-                        <Text style={s.role}>Software Engineer</Text>
+                        <Text style={s.role}>Frontend Developer</Text>
                         <View style={s.contactRow}>
                             {CONTACTS.map(({ label, href }) =>
                                 href ? (
@@ -289,6 +326,24 @@ export function CVDocument({ avatarSrc }: Props) {
 
                 <View style={s.divider} />
 
+                {/* ── Selected Projects ── */}
+                <View style={s.section}>
+                    <Text style={s.sectionHeading}>Selected Projects</Text>
+                    {PROJECTS.map(({ name, description, href }) => (
+                        <View key={name} style={s.projBlock}>
+                            <View style={s.projHeader}>
+                                <Text style={s.projName}>{name}</Text>
+                                <Link style={s.projLink} src={href}>
+                                    {href.replace(/^https?:\/\//, "")}
+                                </Link>
+                            </View>
+                            <Text style={s.projDesc}>{description}</Text>
+                        </View>
+                    ))}
+                </View>
+
+                <View style={s.divider} />
+
                 {/* ── Technical Skills ── */}
                 <View style={s.section}>
                     <Text style={s.sectionHeading}>Technical Skills</Text>
@@ -322,8 +377,8 @@ export function CVDocument({ avatarSrc }: Props) {
                     <View>
                         <View style={s.expHeader}>
                             <Text style={s.expTitle}>
-                                Information Technology (PEF) -{" "}
-                                <Text style={s.expCompany}>CZU Prague</Text>
+                                Information Technology -{" "}
+                                <Text style={s.expCompany}>CZU Prague, Faculty of Economics and Management</Text>
                             </Text>
                             <View style={{ flexDirection: "row", alignItems: "center" }}>
                                 <View style={{
