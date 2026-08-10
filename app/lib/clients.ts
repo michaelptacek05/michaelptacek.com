@@ -27,6 +27,18 @@ export const CLIENTS: Client[] = [
         href: "#",
     },
     {
+        name: "Restaurace Anna Šmejdírka (WIP)",
+        description:
+            "Restaurant with a modern, fully responsive presentation. I designed and built the site on a custom CMS for easy content management, added an inquiry form for reservations and events, and provide the hosting.",
+        href: "#",
+    },
+    {
+        name: "Pivovar Anna Kráva (WIP)",
+        description:
+            "Brewery presenting its beers and taproom. I designed and built the responsive site on a custom CMS with an inquiry form and a local 18+ age verification gate, and provide the hosting.",
+        href: "#",
+    },
+    {
         name: "MS-Tek",
         description:
             "Logistics consulting and staffing company based in Prague. I created the complete UI design for their new website.",
