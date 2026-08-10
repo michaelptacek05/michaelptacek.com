@@ -1,6 +1,6 @@
 import { ContentContainer } from "../../ContentContainer";
 import { Badge } from "@/components/ui/badge";
-import { SiAstro, SiDocker, SiExpress, SiFigma, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiSass, SiShadcnui, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiAstro, SiDocker, SiExpress, SiFigma, SiGit, SiNextdotjs, SiNodedotjs, SiPostgresql, SiPrisma, SiReact, SiSass, SiShadcnui, SiTailwindcss, SiTypescript } from "react-icons/si";
 import { LiaAdobe } from "react-icons/lia";
 import { SectionHeader } from "../../SectionHeader";
 
@@ -48,6 +48,10 @@ const techStack = [
     {
         name: "Docker",
         icon: <SiDocker />
+    },
+    {
+        name: "Git",
+        icon: <SiGit />
     },
     {
         name: "Figma",
