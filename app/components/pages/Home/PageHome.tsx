@@ -11,8 +11,8 @@ export default function PageHome() {
     return (
         <div>
             <Hero />
-            <HomeServices />
-            <HomeClients />
+            {/* <HomeServices /> */}
+            {/* <HomeClients /> */}
             <HomeTechStack />
             <HomeProjects />
             <HomeExpecience />

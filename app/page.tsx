@@ -6,7 +6,7 @@ const jsonLd = {
     name: "Michael Ptáček",
     url: "https://michaelptacek.com",
     image: "https://michaelptacek.com/avatar.jpeg",
-    jobTitle: "Frontend Developer & UI/UX Designer",
+    jobTitle: "FullStack Developer",
     description:
         "Software engineer based in Prague, Czechia. Specializing in frontend development, UI/UX design, and building modern web applications.",
     address: {
